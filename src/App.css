@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #27ae60;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  /*display: flex;*/
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-subtitle {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Questions {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  height: 300px;
+}
+
+.Question {
+  /*height: calc(2.25rem + 2px);*/
+  /*width: 100%;*/
+  padding: 10px;
+  border: 1px solid #dedede;
+  width: 25%;
+}
+
+.Question > label:first-child {
+  display: block;
+  font-weight: bold;
+}
+
+.Question > label {
+  margin: 5px;
+}
