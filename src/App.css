@@ -1,62 +1,91 @@
-* { box-sizing: border-box; }
-
+/* Default configs
+=========================*/
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #222222;
 }
 
 .App-header {
-  background-color: #27ae60;
-  height: 150px;
-  padding: 20px;
-  color: white;
-  /*display: flex;*/
+  background-color: white;
+  padding: 15px 0;
+  text-align: center;
+  color: #c0392b;
+  height: 40%;
 }
 
-.App-title {
-  font-size: 1.5em;
+.App-header .header-title {
+  font-size: 5em;
 }
 
-.App-subtitle {
-  font-size: 1.2em;
-  font-weight: normal;
+.App-header .header-subtitle {
+  font-weight: lighter;
+  color: #222;
 }
 
-.App-intro {
-  font-size: large;
+
+/* Content
+==========================*/
+.App-content {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 60%;*/
+  /*background-color: rgba(0,0,0,.05);*/
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
-.Questions {
+/* Question
+==========================*/
+.Question {
   width: 80%;
-  margin: 0 auto;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
-  height: 300px;
 }
 
-.Question {
-  /*height: calc(2.25rem + 2px);*/
-  /*width: 100%;*/
-  padding: 10px;
-  border: 1px solid #dedede;
-  width: 25%;
+.Question .Question-title {
+  color: #222;
+  font-size: 1.6em;
+  text-align: center;
+  flex: 100%;
 }
 
-.Question > label:first-child {
-  display: block;
-  font-weight: bold;
+/* Answer
+==========================*/
+.Answers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.Question > label {
-  margin: 5px;
+.Question .answer {
+  padding: 15px;
+  color: black;
+  border: 0;
+  font-size: 1.2em;
+  transition: 0.2s;
+  outline: none;
+  width: 80px;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+
+.Question .answer-no {
+  background-color: #dc3545;
+  color: white;
+}
+
+.Question .answer-no:hover {
+  background-color: #bd2130;
+}
+
+.Question .answer-yes {
+  background-color: #28a745;
+  color: white;
+}
+
+.Question .answer-yes:hover {
+  background-color: #218838;
 }
